@@ -1,0 +1,49 @@
+#container_registro {
+    padding: 20px;
+    text-align: center;
+  
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  
+    .password-requirements {
+      font-size: 14px;
+      color: #666;
+      margin: 10px 0;
+    }
+  
+    .requirements-list {
+      list-style-type: none;
+      padding-left: 0;
+      color: #666;
+  
+      li {
+        font-size: 14px;
+      }
+    }
+  
+    .login-link {
+      margin-top: 20px;
+  
+      a {
+        color: var(--ion-color-primary);
+        text-decoration: underline;
+  
+        &:hover {
+          text-decoration: none;
+          color: var(--ion-color-primary-dark);
+        }
+      }
+    }
+  
+    ion-button {
+      margin-top: 20px;
+      font-weight: bold;
+      &:hover {
+        background-color: #4c74af; 
+      }
+    }
+  }
+  

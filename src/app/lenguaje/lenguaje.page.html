@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Asignatura</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Imagen de fondo con efecto de achique -->
+  <div class="header-image-container">
+    <ion-img src="assets/imagenes/lenguajeclas.png.jpg" class="header-image"></ion-img>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="content">
+    <h1>Bienvenido a la asignatura</h1>
+    <p>Aquí puedes explorar materiales y recursos para esta clase.</p>
+  </div>
+
+  <!-- Botón para volver al inicio -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button routerLink="/inicio" routerLinkActive="active">
+      <ion-icon name="home"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container_registro">
+    <h1 class="title">Crea tu cuenta</h1>
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Usuario</ion-label>
+        <ion-input [(ngModel)]="usuario" placeholder="nombre de usuario"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Correo</ion-label>
+        <ion-input [(ngModel)]="email" type="email" placeholder="example@jaja.com"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input [(ngModel)]="password" type="password" placeholder="contraseña"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>
+          <p class="password-requirements">La contraseña debe tener como mínimo lo siguiente:</p>
+          <ul class="requirements-list">
+            <li>- 4 letras</li>
+            <li>- 2 números</li>
+            <li>- 12 carácteres de largo</li>
+          </ul>
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Confirmar Contraseña</ion-label>
+        <ion-input [(ngModel)]="confpass" type="password" placeholder="confirmar contraseña"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-button expand="block" color="success" (click)="onRegister()">Registrarse</ion-button>
+    
+    <div class="login-link">
+      <p>¿Ya estás registrado? <a routerLink="/home" routerLinkActive="active">Inicia sesión</a></p>
+    </div>
+  </div>
+</ion-content>

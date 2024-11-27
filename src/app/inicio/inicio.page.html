@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button> 
+    </ion-buttons>
+    <ion-title>Mi Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="profile-container">
+    <ion-avatar>
+      <img src="assets/imagenes/img1.png" alt="Foto de perfil">
+    </ion-avatar>
+    <p>Nombre de Usuario: {{ displayName }}</p>  <!-- Muestra el nombre de usuario -->
+    <p>Correo: {{ email }}</p>
+    <p>Fecha: {{ currentDate | date: 'longDate' }}</p> 
+  </div>
+
+  <div class="classes-container">
+    <ion-row>
+      <ion-col size="6" class="class-card">
+        <ion-card (click)="goToClass('matematica')">
+          <img src="assets/imagenes/matematica.png.jpg" alt="Matemática">
+          <ion-card-header>
+            <ion-card-title>Matemática</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" class="class-card">
+        <ion-card (click)="goToClass('lenguaje')">
+          <img src="assets/imagenes/lenguajeclas.png.jpg" alt="Lenguaje">
+          <ion-card-header>
+            <ion-card-title>Lenguaje</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6" class="class-card">
+        <ion-card (click)="goToClass('clase1')">
+          <img src="assets/imagenes/ciencia.png.jpg" alt="Ciencias">
+          <ion-card-header>
+            <ion-card-title>Ciencias</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" class="class-card">
+        <ion-card (click)="goToClass('historia')">
+          <img src="assets/imagenes/historia.png.jpeg" alt="Historia">
+          <ion-card-header>
+            <ion-card-title>Historia</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

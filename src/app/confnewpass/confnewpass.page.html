@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Confirmar Nueva Contraseña</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/newpassword"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="confnewpass-container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title class="card-title">Crear Nueva Contraseña</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <p class="description">Por favor, ingresa tu nueva contraseña cumpliendo los requisitos.</p>
+
+        <ion-item>
+          <ion-label position="floating">Nueva Contraseña</ion-label>
+          <ion-input
+            type="password"
+            [(ngModel)]="nuevaContrasena"
+            placeholder="Ingresa tu contraseña"
+          ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Confirmar Contraseña</ion-label>
+          <ion-input
+            type="password"
+            [(ngModel)]="confirmarContrasena"
+            placeholder="Confirma tu contraseña"
+          ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>
+            <p class="password-requirements">La contraseña debe tener como mínimo lo siguiente:</p>
+            <ul class="requirements-list">
+              <li>- 4 letras</li>
+              <li>- 2 números</li>
+              <li>- 12 caracteres de largo</li>
+            </ul>
+          </ion-label>
+        </ion-item>
+
+        <ion-button expand="block" color="success" (click)="actualizarContrasena()">
+          Guardar Nueva Contraseña
+        </ion-button>
+
+        <ion-button expand="block" color="light" routerLink="/home">
+          Volver al Home
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

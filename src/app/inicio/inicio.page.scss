@@ -1,0 +1,34 @@
+.profile-container ion-avatar {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-container ion-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Asegura que la imagen se ajuste dentro del contenedor */
+  }
+  
+  .classes-container ion-col {
+    padding: 10px;
+  }
+  
+  .classes-container ion-card {
+    height: 200px; /* Establece un tamaño uniforme para las tarjetas */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .classes-container ion-card img {
+    height: 120px; /* Tamaño ajustado de las imágenes */
+    width: 100%;
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
